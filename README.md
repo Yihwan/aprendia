@@ -19,5 +19,6 @@ A collection of random thoughts and resources. Very much a WIP!
 * Wait for staging to deploy (tests pass, build finished).
 * You can probably delete your local branch now. Your remote branch should have been deleted automatically after merging to master.
 * Once staging is built, deploy to production using the #deployment Slack channel (i.e., not from Heroku GUI).
+* Monitor for errors in Slack. It takes up to ~15-20min for your changes to propogate in prod after a successfuly deployment. 
 * Celebrate! 🎉
 
