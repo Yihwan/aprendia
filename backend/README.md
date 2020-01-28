@@ -5,3 +5,4 @@
 
 ## Database
 * [Quick DBD](https://quickdatabasediagrams.com) - useful for sketching out schemas. 
+* [Laravel Migrations](https://laravel.com/docs/5.8/migrations)
