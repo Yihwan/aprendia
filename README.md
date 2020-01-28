@@ -22,3 +22,5 @@ A collection of random thoughts and resources. Very much a WIP!
 * Monitor for errors in Slack. It takes up to ~15-20min for your changes to propogate in prod after a successful deployment. 
 * Celebrate! 🎉
 
+## Dev Env Tips 
+
