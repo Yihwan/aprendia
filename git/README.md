@@ -1,33 +1,50 @@
 # Git 
 
 ## Common commands/workflow 
+
+### Create a new branch 
+Usually from `master` 
+
 ```
-# Create a new branch from the current one (usually master)
-git checkout -b new-branch-name 
+git checkout -b new-branch-name
+``` 
 
-# Stage/add all your changes 
-# The period indicates "add all my changes." You can also add specific files, but this is  rare. 
-git add . 
+### Stage/add your changes 
+`.` indicates "add all my changes." You can also add specific files, but this will probably be rare. 
 
-# Commit your changes 
-# -av means "commit all my changes" (a), and show me all the diffs in the next step (v - or "verbose")
-# Add an informative commit message after entering this command
+```
+git add .
+```
+
+### Commit your changes 
+`-av` means "commit all my changes" (a), and show me all the diffs in the next step (v - or "verbose"). This command should automatically open your default editor, where you can add an informative commit message before saving. 
+
+```
 git commit -av 
+```
 
-# Push your changes upstream. 
-# Never merge directly into master from the terminal.
-git push
+### Push your changes to remote/upstream 
+Never merge directly from master from the cli.
 
-# When you've merged your changes into master remotely, 
-# you can delete your local branch 
+```
+git push 
+```
+
+### Delete your local branch 
+Once your changes have been merged into master from Github. 
+```
 git branch -D new-branch-name 
+```
 
-# You can also print out a history of all commits at any time 
-git log 
+### Other useful commands 
+
+```
+# See a history of all commits 
+git log
 ```
 
 ## Aliases 
-Consider adding aliases for common git commands to speed up your workflow. You can do this by editing `~./gitconfig`. Here is a sample file: 
+Consider adding aliases for common git commands to speed up your workflow. You can do this by editing `~./gitconfig`. Here is an example: 
 
 ```
 # This is Git's per-user configuration file.
@@ -50,7 +67,9 @@ Consider adding aliases for common git commands to speed up your workflow. You c
 	unstage = reset HEAD
 ```
 
-## T
+After adding the above aliases, `git checkout -b new-branch-name` becomes `git co -b new-branch-name` and so on. Feel free to customize to your preferences. 
+
+## Terminal Prompt 🎨
 Add this to your `~./bash_profile`: 
 ```
 # Colors
@@ -99,4 +118,12 @@ prompt
 
 This will add the name of the current working branch to your terminal prompt. The colors mean: 
 
-**Never push directly into master.** Remember to exercise extra caution when your terminal prompt indicates you are on the master branch. If you ever see that `master` is red (i.e. you have unstaged changes locally), remember to checkout to a new branch before commiting. **You should never see `master` in yellow (i.e., your local branch is ahead of remote master) at any time**.  
+🟥 Red — You have unstaged changes locally. In other words, your working directory is NOT clean. 
+
+🟨 Yellow — You've committed some changes that haven't been pushed to remote yet. In other words, your branch is "ahead" of remote. 
+
+🟩 Green — Your branch is up to date with remote. In other words, you have nothing to commit. 
+
+⚠️ **Never push directly into master.** ⚠️
+
+Remember to exercise extra caution when your terminal prompt indicates you are on the master branch. If you ever see that `master` is red (i.e. you have unstaged changes locally), remember to checkout to a new branch before commiting. **You should never see `master` in yellow (i.e., your local branch is ahead of remote master) at any time**.  
