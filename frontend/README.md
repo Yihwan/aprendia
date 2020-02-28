@@ -9,7 +9,9 @@
 * [wtfjs video](https://www.youtube.com/watch?v=et8xNAc2ic8) and [Full Reference](https://github.com/denysdovhan/wtfjs).
 * [MDN Docs](https://developer.mozilla.org/en-US/docs/Web) - reference as needed, will usually get here from a Google search.
 * [JavaScript 30](https://javascript30.com/) - a small JavaScript app daily. [Wes Bos](https://wesbos.com) has other great web dev resources as well. 
+* [JavaScript Info](https://javascript.info/)
 * [TypeScript in 5 minutes](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html) - See also "TypeScript" docs in Notion
+* [TypeScript Deep Dive](https://basarat.gitbook.io/typescript/)
 
 ## React 
 * Go through the [intro docs](https://reactjs.org/docs/hello-world.html). Make sure to try writing the code snippets for yourself in Codepen, Glitch, or your preferred online IDE. 

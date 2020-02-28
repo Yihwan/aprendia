@@ -125,5 +125,9 @@ This will add the name of the current working branch to your terminal prompt. Th
 🟩 Green — Your branch is up to date with remote. In other words, you have nothing to commit. 
 
 ⚠️ **Never push directly into master.** ⚠️
+We may have set-up GitHub to prevent this by default, but it doesn't hurt to be extra careful! 
 
 Remember to exercise extra caution when your terminal prompt indicates you are on the master branch. If you ever see that `master` is red (i.e. you have unstaged changes locally), remember to checkout to a new branch before commiting. **You should never see `master` in yellow (i.e., your local branch is ahead of remote master) at any time**.  
+
+### More Resources 
+* [Atlassian Feature Branch Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow)
