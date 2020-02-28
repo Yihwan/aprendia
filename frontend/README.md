@@ -25,3 +25,5 @@
 ## Styling
 * [CSS Cheat Sheet](https://htmlcheatsheet.com/css/)
 * [Emotion](https://emotion.sh/docs/introduction)
+* [Flexbox Froggy](https://flexboxfroggy.com/)
+* [CSS Diner](https://flukeout.github.io/) - selectors
